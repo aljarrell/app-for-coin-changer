@@ -1,0 +1,58 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+}
+
+h1 {
+  color: black;
+  font-size: 3em;
+}
+
+footer {
+  font-size: 0.75em;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+input {
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#buttons{
+  border: none;
+  box-shadow: 0 8px black;
+}
+
+#buttons:hover {background-color: yellow}
+
+#buttons:active {
+  background-color: yellow;
+  box-shadow: 0 4px black;
+  transform: translateY(3px);
+}
+
+hr {
+  border-top: 5px dashed red;
+}

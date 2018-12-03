@@ -1,4 +1,5 @@
 <form action = '/start' method = 'post'>
-  <input type="number" name="cents" required><br>
-  <input type="submit" value="Submit">
+  <h2>How much change do you need?</h2>
+  <input type="number" name="cents" min="1" max="99" required><br><br>
+  <input id = "buttons" type="submit" value="Submit">
 </form>

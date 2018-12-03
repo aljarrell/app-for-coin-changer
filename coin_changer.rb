@@ -5,7 +5,7 @@ def coin(cents)
   remainder = 0
   quarters = 0
   dimes = 0
-  nickels = 0
+  nickel = 0
   pennies = 0
   change_hash = Hash.new
   cents = cents.to_i
@@ -19,8 +19,8 @@ def coin(cents)
             coin_type = "dimes"
             dimes += quotient
           elsif number == 5
-            coin_type = "nickels"
-            nickels += quotient
+            coin_type = "nickel"
+            nickel += quotient
           elsif number == 1
             coin_type = "pennies"
             pennies += quotient
@@ -30,17 +30,16 @@ def coin(cents)
             change_hash.merge!({coin_type => quarters})
           elsif dimes > 0
             change_hash.merge!({coin_type => dimes})
-          elsif nickels > 0
-            change_hash.merge!({coin_type => nickels})
+          elsif nickel > 0
+            change_hash.merge!({coin_type => nickel})
           elsif pennies > 0
             change_hash.merge!({coin_type => pennies})
           end
             quarters = 0
             dimes = 0
-            nickels = 0
+            nickel = 0
             pennies = 0
       end
-       change_hash.to_a.join(", ")
        return change_hash
     end
 end
