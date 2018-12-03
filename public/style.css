@@ -1,3 +1,11 @@
+html {
+  background: url('/pics/change.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 125%;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -10,11 +18,17 @@ body {
   background-color: black;
   top: 0;
   width: 100%;
+  opacity: 0.5;
 }
 
 .topnav a {
   float: right;
   color: white;
+}
+
+.topnav a:hover {
+  background: black;
+  color: red;
 }
 
 h1 {
@@ -23,7 +37,22 @@ h1 {
 }
 
 footer {
-  font-size: 0.75em;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  background: black;
+  color: red;
 }
 
 ul {
@@ -55,4 +84,5 @@ input {
 
 hr {
   border-top: 5px dashed red;
+  opacity: 0.5;
 }
